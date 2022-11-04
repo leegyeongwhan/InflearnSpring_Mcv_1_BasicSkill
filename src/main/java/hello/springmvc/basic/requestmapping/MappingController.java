@@ -10,8 +10,9 @@ public class MappingController {
 
     private Logger log = LoggerFactory.getLogger(getClass());
 
-    @RequestMapping(value = "/hello-basic", method = RequestMethod.GET)
-    public String helloBasic() {
+
+    @RequestMapping(value = "/hello-basic",method = RequestMethod.GET)
+    public String helloBasic(){
         log.info("helloBasic");
         return "ok";
     }
